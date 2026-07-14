@@ -1,0 +1,38 @@
+# --- dependencies ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+
+# --- build outputs ---
+build/
+dist/
+out/
+*.egg-info/
+
+# --- model weights & large artifacts (never commit) ---
+models/
+*.gguf
+*.onnx
+*.safetensors
+*.mlmodelc
+*.mlpackage
+
+# --- env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- caches / editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+.coverage
+*.log
+tmp/
